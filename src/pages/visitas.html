@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Vinheiria Agnello, vinhos, vinícola, vinhos artesanais, vinhos brasileiros, degustação de vinhos, visita à vinícola, loja de vinhos, terroir, enoturismo, Santana de Parnaíba, São Paulo">
+  <meta name="description" content="Conheça a Vinheiria Agnello, uma vinheiria dedicada à tradição, ao terroir e à produção de vinhos artesanais. Descubra nossos vinhos, visitas e experiências.">
+  <link rel="icon" href="../assets/imgs/logo.png" type="image/png">
+  <title>Vinheiria Agnello</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .principal_visitas {
+      background: #fbf8f3;
+      color: #10221a;
+      padding: 55px 0 65px;
+    }
+
+    .conteudo_visitas {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 25px;
+    }
+
+    .introducao_visitas {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .titulo_visitas {
+      color: #0b3d32;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 42px;
+      font-weight: 600;
+      margin: 0 0 15px;
+    }
+
+    .ornamento_visitas {
+      width: 190px;
+      height: 2px;
+      margin: 0 auto 25px;
+      background: #c9a24a;
+    }
+
+    .texto_introducao_visitas {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #657069;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .secao_horarios {
+      margin-top: 30px;
+    }
+
+    .tabela_horarios {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border: 1px solid rgba(11, 61, 50, 0.12);
+      border-radius: 9px;
+      background: #ffffff;
+      box-shadow: 0 8px 25px rgba(16, 34, 26, 0.05);
+    }
+
+    .tabela_horarios th {
+      padding: 19px 24px;
+      background: #0b3d32;
+      color: #ffffff;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .tabela_horarios th:last-child {
+      border-right: none;
+    }
+
+    .tabela_horarios td {
+      padding: 16px 24px;
+      color: #657069;
+      font-size: 15px;
+      text-align: center;
+      border-right: 1px solid #e8e1d7;
+      border-bottom: 1px solid #e8e1d7;
+    }
+
+    .tabela_horarios td:last-child {
+      border-right: none;
+    }
+
+    .tabela_horarios tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .tabela_horarios tbody tr:nth-child(even) {
+      background: #fbf8f3;
+    }
+
+    .tabela_horarios tbody tr:hover {
+      background: #f6efe6;
+      transition: background 0.2s ease;
+    }
+
+    .dia_visita {
+      color: #0b3d32 !important;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 17px !important;
+      font-weight: 600;
+      text-align: left !important;
+    }
+
+    .horario_visita {
+      color: #1c6553;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .aviso_visitas {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-top: 35px;
+      padding: 25px 30px;
+      background: #f6efe6;
+      border: 1px solid rgba(201, 162, 74, 0.25);
+      border-radius: 9px;
+    }
+
+    .detalhe_aviso {
+      width: 4px;
+      min-height: 75px;
+      flex-shrink: 0;
+      background: #c9a24a;
+    }
+
+    .titulo_aviso {
+      margin: 0 0 8px;
+      color: #0b3d32;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .texto_aviso {
+      margin: 0;
+      color: #657069;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .observacao_horarios {
+      margin-top: 20px;
+      color: #657069;
+      font-size: 13px;
+      font-style: italic;
+      text-align: center;
+    }
+
+    .ornamento_hero_visitas {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 380px;
+      margin: 25px 0 30px;
+    }
+
+    .ornamento_hero_visitas span:not(.simbolo_uva) {
+      flex: 1;
+      height: 2px;
+      background: #c9a24a;
+    }
+
+    .simbolo_uva {
+      color: #c9a24a;
+      font-size: 36px;
+      line-height: 1;
+    }
+
+    #sobreposicao_hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="cabecalho_site">
+
+    <div class="topo_cabecalho">
+
+      <a class="marca" href="../../index.html">
+
+        <img
+          class="logo_marca"
+          src="../assets/imgs/logo.png"
+          alt="Logotipo Vinheiria Agnello"
+        >
+
+        <div class="texto_marca">
+          <span class="nome_marca">Vinheiria Agnello</span>
+          <span class="tag_marca">
+            Tradição e terroir em cada garrafa
+          </span>
+        </div>
+
+      </a>
+
+      <nav class="nav_principal">
+
+        <ul class="lista_nav">
+
+          <li>
+            <a href="./vinhos.html">Vinhos</a>
+          </li>
+
+          <li>
+            <a href="./visitas.html">Visitas</a>
+          </li>
+
+          <li>
+            <a href="./loja.html">Loja</a>
+          </li>
+
+          <li>
+            <a href="./contato.html" class="botao_cta">
+              Contato
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+    <div class="hero">
+
+      <div id="sobreposicao_hero">
+
+        <h1 class="titulo_hero">Visitas</h1>
+
+        <div class="ornamento_hero_visitas">
+          <span></span>
+          <span class="simbolo_uva">♧</span>
+          <span></span>
+        </div>
+
+        <p class="subtitulo_hero">
+          Venha viver a experiência de conhecer nossa vinícola,
+          degustar nossos vinhos e descobrir o terroir que
+          faz parte da nossa história.
+        </p>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="principal_visitas">
+
+    <div class="conteudo_visitas">
+
+      <section class="introducao_visitas">
+
+        <h1 class="titulo_visitas">
+          Horários de Visita
+        </h1>
+
+        <div class="ornamento_visitas"></div>
+
+        <p class="texto_introducao_visitas">
+          Venha conhecer nossa vinícola, degustar nossos vinhos
+          e descobrir o terroir que faz parte da nossa história.
+          Recebemos visitantes durante a semana e aos finais
+          de semana, em horários programados para proporcionar
+          uma experiência especial e acolhedora.
+        </p>
+
+      </section>
+
+      <section class="secao_horarios">
+
+        <table class="tabela_horarios">
+
+          <thead>
+            <tr>
+              <th>Dia da semana</th>
+              <th>Horários</th>
+              <th>Duração aproximada</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td class="dia_visita">Segunda-feira</td>
+              <td class="horario_visita">10h | 14h | 16h</td>
+              <td>1h30</td>
+            </tr>
+
+            <tr>
+              <td class="dia_visita">Terça-feira</td>
+              <td class="horario_visita">10h | 14h | 16h</td>
+              <td>1h30</td>
+            </tr>
+
+            <tr>
+              <td class="dia_visita">Quarta-feira</td>
+              <td class="horario_visita">10h | 14h | 16h</td>
+              <td>1h30</td>
+            </tr>
+
+            <tr>
+              <td class="dia_visita">Quinta-feira</td>
+              <td class="horario_visita">10h | 14h | 16h</td>
+              <td>1h30</td>
+            </tr>
+
+            <tr>
+              <td class="dia_visita">Sexta-feira</td>
+              <td class="horario_visita">10h | 14h | 16h</td>
+              <td>1h30</td>
+            </tr>
+
+            <tr>
+              <td class="dia_visita">Sábado</td>
+              <td class="horario_visita">10h | 13h | 16h</td>
+              <td>1h30</td>
+            </tr>
+
+            <tr>
+              <td class="dia_visita">Domingo</td>
+              <td class="horario_visita">10h | 14h | 16h</td>
+              <td>1h30</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+        <p class="observacao_horarios">
+          Horários ilustrativos. Consulte a disponibilidade
+          antes de planejar sua visita.
+        </p>
+
+      </section>
+
+      <aside class="aviso_visitas">
+
+        <div class="detalhe_aviso"></div>
+
+        <div>
+
+          <h2 class="titulo_aviso">
+            Uma experiência especial
+          </h2>
+
+          <p class="texto_aviso">
+            Recomendamos o agendamento prévio para que
+            possamos preparar sua visita com todo o cuidado
+            e proporcionar uma experiência ainda mais especial.
+          </p>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <footer class="rodape_site">
+
+    <div class="rodape_container">
+
+      <div class="rodape_coluna marca_coluna">
+
+        <img
+          class="logo_rodape"
+          src="../assets/imgs/logo.png"
+          alt="Logotipo Vinheiria Agnello"
+        >
+
+        <p class="descricao_rodape">
+          Vinheiria Agnello — tradição e terroir em cada garrafa.
+        </p>
+
+      </div>
+
+      <div class="rodape_coluna nav_coluna">
+
+        <h4 class="titulo_coluna">
+          Navegação
+        </h4>
+
+        <ul class="lista_rodape">
+          <li><a href="./vinhos.html">Vinhos</a></li>
+          <li><a href="./visitas.html">Visitas</a></li>
+          <li><a href="./loja.html">Loja</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+
+      </div>
+
+      <div class="rodape_coluna contato_coluna">
+
+        <h4 class="titulo_coluna">
+          Contato
+        </h4>
+
+        <address class="endereco_rodape">
+          Rua do Vinhedo, 123<br>
+          Santana de Parnaíba, SP<br>
+          Brasil
+        </address>
+
+        <p class="email_rodape">
+          E-mail:
+          <a href="mailto:contato@vinheiriaagnello.com">
+            contato@vinheiriaagnello.com
+          </a>
+        </p>
+
+        <div class="redes_rodape">
+          <a class="Contato" href="./contato.html">
+            Entre em contato
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="rodape_baixo">
+
+      <p class="direitos">
+        © <span class="ano">2026</span>
+        Vinheiria Agnello. Todos os direitos reservados.
+      </p>
+
+      <p class="desenvolvido">
+        Desenvolvido por <strong>Gustavo Santos</strong> —
+        Estudante <strong>1ESPR FIAP</strong>
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

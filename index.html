@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vinheiria Agnello, vinhos, vinícola, vinhos artesanais, vinhos brasileiros, degustação de vinhos, visita à vinícola, loja de vinhos, terroir, enoturismo, Santana de Parnaíba, São Paulo">
+    <meta name="description" content="Conheça a Vinheiria Agnello, uma vinheiria dedicada à tradição, ao terroir e à produção de vinhos artesanais. Descubra nossos vinhos, visitas e experiências.">
+    <link rel="icon" href="./src/assets/imgs/logo.png" type="image/png">
+    <title>Vinheiria Agnello</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <style>
+        .principal_sobre {
+            background: #ffffff;
+            color: #10221a;
+            font-family: "Montserrat", sans-serif;
+            padding: 48px 36px;
+            box-sizing: border-box;
+        }
+
+        .sobre_apresentacao {
+            display: flex;
+            gap: 36px;
+            max-width: 1100px;
+            margin: 0 auto 36px auto;
+            align-items: flex-start;
+        }
+
+        .conteudo_sobre {
+            flex: 2;
+        }
+
+        .titulo_principal {
+            font-family: "Playfair Display", serif;
+            font-size: 36px;
+            color: #0f4d3f;
+            margin-bottom: 12px;
+        }
+
+        .titulo_secundario {
+            font-family: "Playfair Display", serif;
+            font-size: 20px;
+            color: #0f4d3f;
+            margin-bottom: 10px;
+        }
+
+        .paragrafo {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #10221a;
+            margin-bottom: 14px;
+        }
+
+        .assinatura {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #5b5b5b;
+        }
+
+        .info_rapida {
+            flex: 1;
+            background: linear-gradient(180deg, #f6efe6, #fff);
+            border: 1px solid rgba(15, 77, 63, 0.06);
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(15, 77, 63, 0.04);
+        }
+
+        .lista_info {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 12px 0;
+            color: #10221a;
+            line-height: 1.6;
+        }
+
+        .botao_contato {
+            display: inline-block;
+            text-decoration: none;
+            background: #c9a24a;
+            color: #ffffff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .secao_video {
+            max-width: 1100px;
+            margin: 0 auto 28px auto;
+            padding: 18px 0;
+        }
+
+        .video_container {
+            background: linear-gradient(
+                180deg,
+                rgba(15, 77, 63, 0.03),
+                rgba(15, 77, 63, 0.01)
+            );
+            border-radius: 12px;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(15, 77, 63, 0.04);
+            box-shadow: 0 10px 30px rgba(15, 77, 63, 0.03);
+        }
+
+        .video_embutido {
+            width: 100%;
+            height: 480px;
+            max-width: 980px;
+            border-radius: 8px;
+            background: #000;
+        }
+
+        .secao_missao {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-top: 8px;
+        }
+
+        strong {
+            color: #0f4d3f;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho_site">
+        <div class="topo_cabecalho">
+
+            <a class="marca" href="#">
+                <img
+                    class="logo_marca"
+                    src="./src/assets/imgs/logo.png"
+                    alt="Logotipo Vinheiria Agnello"
+                >
+
+                <div class="texto_marca">
+                    <span class="nome_marca">Vinheiria Agnello</span>
+                    <span class="tag_marca">Tradição e terroir em cada garrafa</span>
+                </div>
+            </a>
+
+            <nav class="nav_principal">
+                <ul class="lista_nav">
+
+                    <li>
+                        <a href="./src/pages/vinhos.html">Vinhos</a>
+                    </li>
+
+                    <li>
+                        <a href="./src/pages/visitas.html">Visitas</a>
+                    </li>
+
+                    <li>
+                        <a href="./src/pages/loja.html">Loja</a>
+                    </li>
+
+                    <li>
+                        <a href="./src/pages/contato.html" class="botao_cta">Contato</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="hero">
+            <div class="sobreposicao_hero">
+                <h1 class="titulo_hero">Vinheiria Agnello</h1>
+
+                <p class="subtitulo_hero">
+                    Tradição e terroir em cada garrafa
+                </p>
+
+                <a class="cta_hero" href="./src/pages/vinhos.html">
+                    Conheça nossos rótulos
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal_sobre" id="sobre">
+
+        <section class="sobre_apresentacao">
+
+            <div class="conteudo_sobre">
+
+                <h2 id="titulo_sobre" class="titulo_principal">
+                    Sobre a Vinheiria Agnello
+                </h2>
+
+                <p class="paragrafo">
+                    A <strong>Vinheiria Agnello</strong> nasce da paixão pelo cultivo da videira e pela produção de
+                    vinhos que traduzem o terroir local.
+                    Unimos práticas tradicionais e técnicas cuidadosas para criar rótulos elegantes, com personalidade e
+                    respeito ao meio ambiente.
+                </p>
+
+                <p class="paragrafo">
+                    Nossa produção prioriza a qualidade em cada etapa: seleção de uvas, fermentação controlada e
+                    envelhecimento atento.
+                    Valorizamos a sustentabilidade no campo, o trabalho artesanal e a experiência sensorial que cada
+                    garrafa proporciona.
+                </p>
+
+                <p class="paragrafo">
+                    Oferecemos visitas guiadas, degustações e uma loja com rótulos exclusivos. Seja para colecionadores
+                    ou apreciadores iniciantes,
+                    nossa proposta é aproximar pessoas do mundo do vinho com hospitalidade e conhecimento.
+                </p>
+
+                <p class="paragrafo assinatura">
+                    Texto por <strong>Gustavo Santos</strong> —
+                    Estudante <strong>1ESPR FIAP</strong>
+                </p>
+
+            </div>
+
+            <aside class="info_rapida">
+
+                <h3 id="titulo_info" class="titulo_secundario">
+                    Informações rápidas
+                </h3>
+
+                <ul class="lista_info">
+                    <li><strong>Local:</strong> Santana de Parnaíba, SP</li>
+                    <li><strong>Visitas:</strong> agendamento prévio</li>
+                    <li><strong>Loja:</strong> rótulos sazonais e clássicos</li>
+                    <li><strong>Contato:</strong> contato@vinheiriaagnello.com</li>
+                </ul>
+
+                <a class="botao_contato" href="./src/pages/contato.html">
+                    Agendar visita
+                </a>
+
+            </aside>
+
+        </section>
+
+        <section class="secao_video">
+
+            <h3 id="titulo_video" class="titulo_secundario">
+                Vídeo institucional
+            </h3>
+
+            <div class="video_container">
+
+                <iframe
+                    class="video_embutido"
+                    src="./src/assets/videos/Vinheria_Agnello.mp4"
+                    title="Vídeo institucional da Vinheiria Agnello"
+                    frameborder="0"
+                ></iframe>
+
+            </div>
+
+        </section>
+
+        <section class="secao_missao">
+
+            <h3 id="titulo_missao" class="titulo_secundario">
+                Nossa missão
+            </h3>
+
+            <p class="paragrafo">
+                Produzir vinhos que expressem a identidade do nosso terroir, promovendo práticas sustentáveis e
+                experiências memoráveis para visitantes e clientes.
+                Buscamos excelência, respeito à natureza e conexão entre pessoas por meio do vinho.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape_site">
+
+        <div class="rodape_container">
+
+            <div class="rodape_coluna marca_coluna">
+
+                <img
+                    class="logo_rodape"
+                    src="./src/assets/imgs/logo.png"
+                    alt="Logotipo Vinheiria Agnello"
+                >
+
+                <p class="descricao_rodape">
+                    Vinheiria Agnello — tradição e terroir em cada garrafa.
+                </p>
+
+            </div>
+
+            <div class="rodape_coluna nav_coluna">
+
+                <h4 class="titulo_coluna">
+                    Navegação
+                </h4>
+
+                <ul class="lista_rodape">
+                    <li><a href="./src/pages/vinhos.html">Vinhos</a></li>
+                    <li><a href="./src/pages/visitas.html">Visitas</a></li>
+                    <li><a href="./src/pages/loja.html">Loja</a></li>
+                    <li><a href="./src/pages/contato.html">Contato</a></li>
+                </ul>
+
+            </div>
+
+            <div class="rodape_coluna contato_coluna">
+
+                <h4 class="titulo_coluna">
+                    Contato
+                </h4>
+
+                <address class="endereco_rodape">
+                    Rua do Vinhedo, 123<br>
+                    Santana de Parnaíba, SP<br>
+                    Brasil
+                </address>
+
+                <p class="email_rodape">
+                    E-mail:
+                    <a href="mailto:contato@vinheiriaagnello.com">
+                        contato@vinheiriaagnello.com
+                    </a>
+                </p>
+
+                <div class="redes_rodape">
+                    <a class="Contato" href="./src/pages/contato.html">
+                        Entre em contato
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="rodape_baixo">
+
+            <p class="direitos">
+                © <span class="ano">2026</span>
+                Vinheiria Agnello. Todos os direitos reservados.
+            </p>
+
+            <p class="desenvolvido">
+                Desenvolvido por <strong>Gustavo Santos</strong> —
+                Estudante <strong>1ESPR FIAP</strong>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

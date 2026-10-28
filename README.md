@@ -1,0 +1,4 @@
+- Nome do projeto: Vinharia Agnello
+- Descrição resumida: Sistema de simulação de e-comerce e de administração da vinharia agenello
+- Desenvolvedor: Gustavo Batista de Oliveira Santos
+- Link do GitHub Pages: https://thorfdivine.github.io/vinharia-agnello/src/pages/loja.html

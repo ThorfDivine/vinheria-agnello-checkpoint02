@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Vinheiria Agnello, vinhos, vinícola, vinhos artesanais, vinhos brasileiros, degustação de vinhos, visita à vinícola, loja de vinhos, terroir, enoturismo, Santana de Parnaíba, São Paulo">
+  <meta name="description" content="Conheça a Vinheiria Agnello, uma vinheiria dedicada à tradição, ao terroir e à produção de vinhos artesanais. Descubra nossos vinhos, visitas e experiências.">
+  <link rel="icon" href="../assets/imgs/logo.png" type="image/png">
+  <title>Vinheiria Agnello</title>
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <style>
+    .principal_compra {
+      min-height: 650px;
+      padding: 60px 25px 80px;
+      background: #fbf8f3;
+      color: #10221a;
+    }
+
+    .conteudo_compra {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .introducao_compra {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .titulo_compra {
+      margin: 0 0 15px;
+      color: #0b3d32;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 44px;
+      font-weight: 600;
+    }
+
+    .ornamento_compra {
+      width: 150px;
+      height: 2px;
+      margin: 0 auto 20px;
+      background: #c9a24a;
+    }
+
+    .texto_introducao_compra {
+      max-width: 650px;
+      margin: 0 auto;
+      color: #657069;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .painel_compra {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .cartao_resumo {
+      padding: 30px;
+      background: #0b3d32;
+      color: #fbf8f3;
+      border: 1px solid #c9a24a;
+      border-radius: 9px;
+      box-shadow: 0 10px 25px rgba(16, 34, 26, 0.08);
+    }
+
+    .titulo_resumo {
+      margin: 0 0 25px;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 27px;
+      font-weight: 500;
+    }
+
+    .linha_resumo {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      font-size: 14px;
+    }
+
+    .valor_resumo {
+      color: #dfc47a;
+      text-align: right;
+      font-weight: 500;
+    }
+
+    .total_compra {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin-top: 25px;
+      color: #dfc47a;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .secao_dados {
+      padding: 30px;
+      background: #ffffff;
+      border: 1px solid rgba(11, 61, 50, 0.12);
+      border-radius: 9px;
+      box-shadow: 0 10px 25px rgba(16, 34, 26, 0.05);
+    }
+
+    .titulo_dados {
+      margin: 0 0 10px;
+      color: #0b3d32;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .texto_dados {
+      margin: 0 0 25px;
+      color: #657069;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .lista_dados {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .botao_dado {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      width: 100%;
+      padding: 17px 18px;
+      color: #0b3d32;
+      background: #fbf8f3;
+      border: 1px solid rgba(11, 61, 50, 0.15);
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 14px;
+      text-align: left;
+      cursor: pointer;
+      transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .botao_dado:hover {
+      background: #f6efe6;
+      border-color: #c9a24a;
+    }
+
+    .botao_confirmar {
+      width: 100%;
+      margin-top: 25px;
+      padding: 16px 20px;
+      color: #ffffff;
+      background: #0b3d32;
+      border: 1px solid #c9a24a;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition:
+        background 0.2s ease,
+        color 0.2s ease;
+    }
+
+    .botao_confirmar:hover {
+      color: #0b3d32;
+      background: #c9a24a;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <header class="cabecalho_site" role="banner">
+    <div class="topo_cabecalho">
+
+      <a class="marca" href="../../index.html" aria-label="Vinheiria Agnello - página inicial">
+        <img
+          class="logo_marca"
+          src="../assets/imgs/logo.png"
+          alt="Logotipo Vinheiria Agnello"
+        />
+
+        <div class="texto_marca">
+          <span class="nome_marca">Vinheiria Agnello</span>
+          <span class="tag_marca">Tradição e terroir em cada garrafa</span>
+        </div>
+      </a>
+
+      <nav class="nav_principal" aria-label="Navegação principal">
+        <ul id="lista_nav" class="lista_nav">
+          <li><a href="./vinhos.html">Vinhos</a></li>
+          <li><a href="./visitas.html">Visitas</a></li>
+          <li><a href="./loja.html">Loja</a></li>
+          <li><a href="./contato.html" class="botao_cta">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="hero" role="img">
+      <div class="sobreposicao_hero">
+        <h1 class="titulo_hero">Vinheiria Agnello</h1>
+        <p class="subtitulo_hero">Tradição e terroir em cada garrafa</p>
+        <a class="cta_hero" href="./vinhos.html">Conheça nossos rótulos</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="principal_compra">
+
+    <div class="conteudo_compra">
+
+      <section class="introducao_compra">
+        <h1 class="titulo_compra">Finalizar Compra</h1>
+
+        <div class="ornamento_compra"></div>
+
+        <p class="texto_introducao_compra">
+          Estamos quase lá! Confira seu pedido e informe
+          seus dados para continuar com a compra.
+        </p>
+      </section>
+
+      <div class="painel_compra">
+
+        <section class="cartao_resumo">
+
+          <h2 class="titulo_resumo">Seu Pedido</h2>
+
+          <div class="linha_resumo">
+            <span>Vinho</span>
+            <span class="valor_resumo" id="resumo_vinho">
+              Não selecionado
+            </span>
+          </div>
+
+          <div class="linha_resumo">
+            <span>Quantidade</span>
+            <span class="valor_resumo" id="resumo_quantidade">
+              A definir
+            </span>
+          </div>
+
+          <div class="linha_resumo">
+            <span>Valor unitário</span>
+            <span class="valor_resumo" id="resumo_preco">
+              R$ 0,00
+            </span>
+          </div>
+
+          <div class="total_compra">
+            <span>Total</span>
+            <span id="resumo_total">R$ 0,00</span>
+          </div>
+
+        </section>
+
+        <section class="secao_dados">
+
+          <h2 class="titulo_dados">
+            Seus Dados
+          </h2>
+
+          <p class="texto_dados">
+            Clique em cada botão para informar os dados
+            solicitados. As informações serão utilizadas
+            para preparar seu pedido.
+          </p>
+
+          <div class="lista_dados">
+
+            <button
+              type="button"
+              class="botao_dado"
+              onclick="informarNome()"
+            >
+              <span>Informar nome completo</span>
+              <span id="nome_completo"></span>
+            </button>
+
+            <button
+              type="button"
+              class="botao_dado"
+              onclick="informarQuantidade()"
+            >
+              <span>Escolher quantidade</span>
+              <span id="quantidade"></span>
+            </button>
+
+            <button
+              type="button"
+              class="botao_dado"
+              onclick="informarEmail()"
+            >
+              <span>Informar e-mail</span>
+              <span id="email"></span>
+            </button>
+
+            <button
+              type="button"
+              class="botao_dado"
+              onclick="informarTelefone()"
+            >
+              <span>Informar telefone</span>
+              <span id="telefone"></span>
+            </button>
+
+            <button
+              type="button"
+              class="botao_dado"
+              onclick="informarEndereco()"
+            >
+              <span>Informar endereço de entrega</span>
+              <span id="endereco"></span>
+            </button>
+
+            <button
+              type="button"
+              class="botao_dado"
+              onclick="informarVinhoEscolhido()"
+            >
+              <span>Informar vinho escolhido</span>
+              <span id="vinho"></span>
+            </button>
+
+            <button
+              type="button"
+              class="botao_dado"
+              onclick="informarFormaPagamento()"
+            >
+              <span>Escolher forma de pagamento</span>
+              <span id="formaDePagamento"></span>
+
+            </button>
+
+          </div>
+
+          <button
+            type="button"
+            class="botao_confirmar"
+            id="botao_confirmar_compra"
+            onclick="confirmarCompra()"
+          >
+            Confirmar Pedido
+          </button>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="rodape_site" role="contentinfo">
+
+    <div class="rodape_container">
+
+      <div class="rodape_coluna marca_coluna">
+        <img
+          class="logo_rodape"
+          src="../assets/imgs/logo.png"
+          alt="Logotipo Vinheiria Agnello"
+        />
+
+        <p class="descricao_rodape">
+          Vinheiria Agnello — tradição e terroir em cada garrafa.
+        </p>
+      </div>
+
+      <div class="rodape_coluna nav_coluna">
+        <h4 class="titulo_coluna">Navegação</h4>
+
+        <ul class="lista_rodape">
+          <li><a href="./vinhos.html">Vinhos</a></li>
+          <li><a href="./visitas.html">Visitas</a></li>
+          <li><a href="./loja.html">Loja</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape_coluna contato_coluna">
+
+        <h4 class="titulo_coluna">Contato</h4>
+
+        <address class="endereco_rodape">
+          Rua do Vinhedo, 123<br />
+          Santana de Parnaíba, SP<br />
+          Brasil
+        </address>
+
+        <p class="email_rodape">
+          E-mail:
+          <a href="mailto:contato@vinheiriaagnello.com">
+            contato@vinheiriaagnello.com
+          </a>
+        </p>
+
+        <div class="redes_rodape">
+          <a class="Contato" href="./contato.html">Entre em contato</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="rodape_baixo">
+      <p class="direitos">
+        © <span class="ano">2026</span> Vinheiria Agnello. Todos os direitos reservados.
+      </p>
+
+      <p class="desenvolvido">
+        Desenvolvido por <strong>Gustavo Santos</strong> —
+        Estudante <strong>1ESPR FIAP</strong>
+      </p>
+    </div>
+
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>
